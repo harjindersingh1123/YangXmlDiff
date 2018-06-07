@@ -1,0 +1,76 @@
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+   <interfaces xmlns="http://openconfig.net/yang/interfaces">
+   <interface>
+    <name>GigabitEthernet0/0/0/2</name>
+    <config>
+     <name>GigabitEthernet0/0/0/2</name>
+     <type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+     <enabled>true</enabled>
+     <description>Cisco: G0/0/0/2</description>
+    </config>
+    <ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+     <config>
+      <auto-negotiate>false</auto-negotiate>
+     </config>
+    </ethernet>
+    <subinterfaces>
+     <subinterface>
+      <index>3</index>
+      <config>
+	   <index>3</index>
+       <name>GigabitEthernet0/0/0/2.3</name>
+       <enabled>true</enabled>
+       <description>sub2_3</description>
+      </config>
+      <ipv6 xmlns="http://openconfig.net/yang/interfaces/ip">
+       <config>
+        <enabled>false</enabled>
+       </config>
+      </ipv6>
+     </subinterface>
+     <subinterface>
+      <index>1</index>
+      <config>
+	   <index>1</index>
+       <name>GigabitEthernet0/0/0/2.1</name>
+       <enabled>true</enabled>
+       <description>sub2_1</description>
+      </config>
+      <ipv6 xmlns="http://openconfig.net/yang/interfaces/ip">
+       <config>
+        <enabled>false</enabled>
+       </config>
+      </ipv6>
+     </subinterface>
+     <subinterface>
+      <index>2</index>
+      <config>
+	   <index>2</index>
+       <name>GigabitEthernet0/0/0/2.2</name>
+       <enabled>true</enabled>
+       <description>sub2_2</description>
+      </config>
+      <ipv6 xmlns="http://openconfig.net/yang/interfaces/ip">
+       <config>
+        <enabled>false</enabled>
+       </config>
+      </ipv6>
+     </subinterface>
+     <subinterface>
+      <index>4</index>
+      <config>
+	   <index>4</index>
+       <name>GigabitEthernet0/0/0/2.4</name>
+       <enabled>true</enabled>
+       <description>sub2_4</description>
+      </config>
+      <ipv6 xmlns="http://openconfig.net/yang/interfaces/ip">
+       <config>
+        <enabled>false</enabled>
+       </config>
+      </ipv6>
+     </subinterface>
+    </subinterfaces>
+   </interface>
+  </interfaces>
+ </data>

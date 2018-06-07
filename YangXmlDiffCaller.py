@@ -1,9 +1,10 @@
+
+from yang_xml import YangXmlDiff as xmldiff
 import xml.etree.ElementTree as ET
-import YangXmlDiff as xmldiff
+import unittest
 
-expected = ET.parse('/mnt/c/ml/python_course/expected.txt')
-actual = ET.parse('/mnt/c/ml/python_course/actual.txt')
-
+expected = ET.parse('test_xml/expected.txt')
+actual = ET.parse('test_xml/actual.txt')
 
 def my_node_compare(expected_node, actual_node):
     '''
@@ -31,9 +32,15 @@ def my_node_compare(expected_node, actual_node):
     else:
         return True
 
+class TestXml_diff(unittest.TestCase):
+   
+    
+    def test_one_positive(self):
+        yangXmlDiff = xmldiff.YangXmlDiff(my_node_compare, verbose=1)
+        result = yangXmlDiff.compare_root(expected, actual)
+        self.assertEqual(result, True)
 
+if __name__ == "__main__":
+    unittest.main()
 
-
-yangXmlDiff = xmldiff.YangXmlDiff(my_node_compare)
-yangXmlDiff.compare_root(expected, actual)
 
