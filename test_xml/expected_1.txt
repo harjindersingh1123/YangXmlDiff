@@ -1,0 +1,9 @@
+<data>
+   <interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg">
+      <interface-configuration>
+         <active>act</active>
+         <interface-name>Bundle-Ether3</interface-name>
+         <link-status></link-status>
+      </interface-configuration>
+   </interface-configurations>
+</data>
